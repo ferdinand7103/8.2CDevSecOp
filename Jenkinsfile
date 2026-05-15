@@ -1,10 +1,12 @@
+// Mock CI/CD pipeline for SIT753 Part 1 Task 2
+
 pipeline {
     agent any
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ferdinand7103/8.2CDevSecOps.git'
+                git branch: 'main', url: 'https://github.com/ferdinand7103/8.2CDevSecOp.git'
             }
         }
 
